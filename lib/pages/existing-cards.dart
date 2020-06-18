@@ -15,7 +15,7 @@ class ExistingCardsPageState extends State<ExistingCardsPage> {
   List cards = [{
     'cardNumber': '4242424242424242',
     'expiryDate': '04/24',
-    'cardHolderName': 'Muhammad Ahsan Ayaz',
+    'cardHolderName': 'Name test',
     'cvvCode': '424',
     'showBackView': false,
   }, {
@@ -47,7 +47,7 @@ class ExistingCardsPageState extends State<ExistingCardsPage> {
     Scaffold.of(context).showSnackBar(
         SnackBar(
           content: Text(response.message),
-          duration: new Duration(milliseconds: 1200),
+          duration: new Duration(milliseconds: 12000),
         )
       ).closed.then((_) {
         Navigator.pop(context);
