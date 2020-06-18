@@ -12,7 +12,7 @@ class StripeTransactionResponse {
 class StripeService {
   static String apiBase = 'https://api.stripe.com/v1';
   static String paymentApiUrl = '${StripeService.apiBase}/payment_intents';
-  static String secret = 'your_api_secret';
+  static String secret = 'TODO CHANGE SECRET';
   static Map<String, String> headers = {
     'Authorization': 'Bearer ${StripeService.secret}',
     'Content-Type': 'application/x-www-form-urlencoded'
@@ -20,7 +20,7 @@ class StripeService {
   static init() {
     StripePayment.setOptions(
       StripeOptions(
-        publishableKey: "your_api_publishable_key",
+        publishableKey: "TODO CHANGE PUBLISHABLE",
         merchantId: "Test",
         androidPayMode: 'test'
       )
